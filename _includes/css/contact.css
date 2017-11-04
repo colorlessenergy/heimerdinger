@@ -1,0 +1,12 @@
+.contact {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 564px;
+  height: 92vh;
+}
+
+.contact h2 {
+  text-align: center;
+  width: 90%;
+}

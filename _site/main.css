@@ -159,6 +159,20 @@ nav p {
   opacity: 1;
 }
 
+
+.contact {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 564px;
+  height: 92vh;
+}
+
+.contact h2 {
+  text-align: center;
+  width: 90%;
+}
+
 footer {
   align-items: center;
   background-color: #fff;
@@ -181,7 +195,6 @@ footer p.link a {
   display: block;
   padding: 20px;
   text-decoration: none;
-  width: 100%;
 }
 
 footer h2 {
