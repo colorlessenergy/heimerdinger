@@ -3,3 +3,5 @@
 
 {% include css/base.css %}
 {% include css/header.css %}
+{% include css/gallery.css %}
+{% include css/footer.css %}

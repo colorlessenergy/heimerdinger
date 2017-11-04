@@ -1,0 +1,28 @@
+footer {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 317px;
+  height: 50vh;
+}
+
+footer p.link {
+  background-color: #1b1b1b;
+  margin: 0;
+  text-align: center;
+  width: 80%;
+}
+
+footer p.link a {
+  color: #f5f5f5;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 35px;
+}
