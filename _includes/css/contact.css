@@ -10,3 +10,19 @@
   text-align: center;
   width: 90%;
 }
+
+.contact h2 a {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+.contact h2 a:hover {
+  color: #000;
+}
+
+@media screen and (min-width: 960px) {
+  .contact h2 {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+}
