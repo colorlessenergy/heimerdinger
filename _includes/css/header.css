@@ -12,6 +12,19 @@ header div.title {
   justify-content: center;
   margin: 0;
   text-align: center;
+  animation: bounceUp 1s ease;
+}
+
+@keyframes bounceUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 header div.title h1 {
@@ -28,14 +41,23 @@ nav {
   position: relative;
   right: 0;
   z-index: 2;
+  animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 nav div, nav p {
   margin: 0 20px;
-}
-
-nav p {
-  font-size: 18px;
 }
 
 .container-menu {
@@ -56,7 +78,7 @@ nav p {
   width: 100%;
 }
 
-.menu-res div h3 a {
+.menu-res div h3 a, nav p a {
   color: #000;
   font-size: 35px;
   letter-spacing: 1px;
@@ -64,7 +86,11 @@ nav p {
   transition: color 0.3s ease;
 }
 
-.menu-res div h3 a:hover {
+nav p a {
+  font-size: 18px;
+}
+
+.menu-res div h3 a:hover, nav p a:hover {
   color: #159e9e;
 }
 
@@ -102,9 +128,22 @@ nav.main {
   display: none;
 }
 
+p#down {
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+p#down:hover {
+  color: #fff;
+}
+
 @media screen and (min-width: 961px) {
   header div.title h1 {
     font-size: 50px;
+  }
+
+  nav.main {
+    display: flex;
   }
 
   nav.res {

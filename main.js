@@ -3,16 +3,21 @@ let menuRes = document.querySelector(".menu-res");
 let down = document.querySelector("#down");
 let gallery = document.querySelector(".gallery");
 let galleryDiv;
+
 if (gallery) {
   galleryDiv = gallery.querySelectorAll("div");
 
   down.addEventListener("click", function () {
+    let scrollValue = 0;
     let scroll = window.setInterval(function () {
+      let prevValue = window.scrollY;
       if (window.scrollY < gallery.offsetTop - 50) {
-        window.scrollBy(0, 5);
+        window.scrollBy(0, scrollValue);
     } else if (window.scrollY > gallery.offsetTop - 50) {
-      window.clearInterval(scroll)
+      scrollValue = 0;
+      window.clearInterval(scroll);
     }
+    scrollValue++;
     }, 10)
   });
 }
