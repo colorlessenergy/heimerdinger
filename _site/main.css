@@ -105,6 +105,10 @@ nav p {
   transform: rotate(45deg) translate(-1px, 1px);
 }
 
+nav.main {
+  display: none;
+}
+
 @media screen and (min-width: 961px) {
   header div.title h1 {
     font-size: 50px;
@@ -181,6 +185,21 @@ nav p {
 .gallery div:hover p {
   height: 100%;
   opacity: 1;
+}
+
+@media screen and (min-width: 961px) {
+  section.gallery {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  aside.container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 

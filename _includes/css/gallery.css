@@ -45,3 +45,18 @@
   height: 100%;
   opacity: 1;
 }
+
+@media screen and (min-width: 961px) {
+  section.gallery {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  aside.container {
+    display: flex;
+    justify-content: center;
+  }
+}
